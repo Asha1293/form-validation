@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+<form>
+
+    <i class="fas fa-paper-plane"></i>
+    
+    <div class="input-group">
+    <label>First Name</label>
+    <input type="text" id="fname" onkeyup="validationFname()" placeholder="Enter your first name">
+    <span id="firstname-error"></span>
+    </div>
+
+    <div class="input-group">
+
+    <label>Last Name</label>
+    <input type="text" id="lname" onkeyup="validationLname()" placeholder="Enter your last name">
+    <span id="lastname-error"></span>
+
+    </div>
+
+    <div class="input-group">
+
+    <label>Contact No</label>
+    <input type="tel" id="cnumber" onkeyup="validationContactno()"  placeholder="01 23 45 67 89">
+    <span id="number-error"></span>
+    
+
+    </div>
+
+    <div class="input-group">
+
+    <label>Email id</label>
+    <input type="email" id="Email" onkeyup="validationEmailid()" placeholder="Enter email">
+    <span id="email-error"></span>
+
+    </div>
+
+    <div class="input-group">
+
+    <label>Message</label>
+    <textarea rows="3" id="message" onkeyup="validateMessage()" placeholder="Your message"></textarea>
+    <span id="message-error"></span>
+    
+
+    </div>
+<button onclick="return validateForm()">Submit</button>
+<span id="submit-error"></span>
+</form>
+
+
+
+
+
+
+</div>
+
+
+
+    
+</body>
+</html>
